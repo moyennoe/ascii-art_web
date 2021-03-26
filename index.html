@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<!-- <link rel="stylesheet" href="style.css" /> -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	</head>
+	
+		<meta charset="utf-8">
+
+		<title>Group Projet</title>
+		
+	</head>
+	<body>
+		
+		<div class="MyDiv">
+				<h1>Ascii-Art</h1>
+				<p>done by Tom.A, Tom.B, André, Damien, Noé.</p>
+		</div>
+			
+	
+		<br>
+		<br>
+
+
+		<form action="/ascii-image" method="get" autocomplete="off">
+		
+			<h2>Choose an image
+			<br>
+				<select name="image" id="image">
+					<option id= "image" value="award.png">Phoque</option>
+					<option id= "image" value="boom.png">Boom</option>
+					<option id= "image" value="rickroll.png">Suprise</option>
+					<option id= "image" value="triggered.png">Triggered</option>
+				</select>
+				<br>
+	
+				<button id="Image" type="submit">image</button>
+				
+			</h2>
+		</form>
+			<h3>Put a quote and choose your font and print it on a file.
+				<br>
+				If you want to make a backslash. Write \n on the text
+			</h3>
+			<br>
+			<!-- <input TYPE="text" name="ascii" id="ascii" value = ""> -->
+		<form action="/ascii-art" method="get" autocomplete="off">
+			<textarea TYPE="text" id="ascii" name="StringToAscii" value = "" style="width: 234px;">Type Something</textarea>
+			<br>
+				
+			<select name="files_name" id="files_name">
+				<option id="files_name" value="standard.txt">Standard</option>
+				<option id="files_name" value="shadow.txt">Shadow</option>
+				<option id="files_name" value="thinkertoy.txt">Thinkertoy</option>
+			</select>
+
+				
+			<select name="is_okay" id="is_okay">
+				<option id="is_okay" value="true">Je veux imprimer dans un fichier</option>
+				<option id="is_okay" value="false">Je veux pas imprimer dans un fichier</option>
+			</select>
+
+			<select name="choose" id="choose">
+				<option id="choose" value="txt">.txt</option>
+			</select>
+
+			<!-- <input type="text" name="writeInFile" id="NamedFile" value = "filename">  -->
+
+			<input type="text" id="file" name="NamedFile" value = "test" >
+				
+
+				
+			<br>
+			<button id="Ascii" type="submit">Submit</button>
+
+			<br>
+		</form>
+</body>
+</html>
